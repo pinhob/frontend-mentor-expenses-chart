@@ -31,12 +31,13 @@
     display: flex;
     flex-direction: column;
     padding: 18px;
+    border-radius: 16px;
   }
 
   div.spending-data {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: last baseline;
   }
 
   h1 {
@@ -48,6 +49,10 @@
   .total-month p {
     font-size: 2.25rem;
     font-weight: 700;
+  }
+
+  .last-month {
+    text-align: end;
   }
 
   h2 {
