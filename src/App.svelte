@@ -1,10 +1,10 @@
 <script>
+  import Balance from "./lib/components/Balance.svelte";
+
 </script>
 
 <main>
-  My balance
-  $921.48
-
+  <Balance />
   Spending - Last 7 days
 
   mon
