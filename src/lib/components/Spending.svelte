@@ -1,16 +1,11 @@
+<script>
+  import Chart from "./Chart.svelte";
+</script>
+
 <div class="wrapper">
   <h1>Spending - Last 7 days</h1>
 
-  <p>
-    mon
-    tue
-    wed
-    thu
-    fri
-    sat
-    sun
-  </p>
-
+  <Chart />
   <div class="divider"></div>
 
   <div class="spending-data">
