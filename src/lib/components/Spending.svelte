@@ -25,29 +25,36 @@
     background-color: hsl(0, 100%, 100%);
     display: flex;
     flex-direction: column;
-    padding: 18px;
+    padding: 32px;
     border-radius: 16px;
+    width:  min(546px, 100%);
   }
 
   div.spending-data {
     display: flex;
     justify-content: space-between;
     align-items: last baseline;
+    line-height: normal;
   }
 
   h1 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 700;
     margin-bottom: 1rem;
   }
 
   .total-month p {
-    font-size: 2.25rem;
+    font-size: 3rem;
     font-weight: 700;
   }
 
   .last-month {
     text-align: end;
+  }
+
+  .last-month p {
+    text-align: end;
+    font-weight: 700;
   }
 
   h2 {

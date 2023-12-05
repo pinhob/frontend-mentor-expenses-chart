@@ -1,4 +1,4 @@
-<div>
+<div class="wrapper">
   <div class="balance-data">
     <h2>My balance</h2>
     <p>$921.48</p>
@@ -7,12 +7,13 @@
 </div>
 
 <style>
-  div {
+  div.wrapper {
     background-color: hsl(10, 79%, 65%);
     border-radius: 16px;
-    padding: 1rem 1.5rem;
+    padding: 16px 28px;
     color: white;
     display: flex;
+    width:  min(546px, 100%);
     justify-content: space-between;
     align-items: center;
   }

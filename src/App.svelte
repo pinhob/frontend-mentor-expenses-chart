@@ -1,10 +1,15 @@
 <script>
   import Balance from "./lib/components/Balance.svelte";
   import Spending from "./lib/components/Spending.svelte";
-
 </script>
 
-<main>
+<svelte:head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap" rel="stylesheet">
+</svelte:head>
+
+<main class="wrapper">
   <Balance />
   <Spending />
 
@@ -15,15 +20,15 @@
 </main>
 
 <style>
-  main {
+  main.wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 18px;
     height: 100vh;
+    padding: 0 16px;
   }
-
   .attribution { 
     position: absolute;
     bottom: 0;
