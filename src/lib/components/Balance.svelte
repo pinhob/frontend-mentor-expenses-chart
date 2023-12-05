@@ -3,7 +3,7 @@
     <h2>My balance</h2>
     <p>$921.48</p>
   </div>
-  <img src="images/logo.svg" alt="logo" />
+  <img src="public/logo.svg" alt="logo" />
 </div>
 
 <style>
