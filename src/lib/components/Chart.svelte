@@ -3,9 +3,11 @@
   import { onMount } from 'svelte';
   import Chart from 'chart.js/auto';
   import { getDayOfTheWeek } from '../../utils/handleDate';
+  import {  CYAN_COLOR, SOFT_RED_COLOR, DARK_BROWN_COLOR, CYAN_COLOR_HOVER, SOFT_RED_COLOR_HOVER } from '../../utils/colors';
 
   let chartCanvas;
   const currentDay = getDayOfTheWeek();
+
 
   const chartConfig = {
       type: 'bar',
@@ -14,7 +16,7 @@
         datasets: [
           {
             data: data.map(row => row.amount),
-            backgroundColor: data.map(row => row.day === currentDay ? 'hsl(186, 34%, 60%)' : 'hsl(10, 79%, 65%)'),
+            backgroundColor: data.map(row => row.day === currentDay ? CYAN_COLOR : SOFT_RED_COLOR),
           }
         ]
       },
@@ -24,7 +26,7 @@
             display: false
           },
           tooltip: {
-            backgroundColor: 'hsl(25, 47%, 15%)',
+            backgroundColor: DARK_BROWN_COLOR,
             displayColors: false,
             callbacks: {
               title: () => '',
@@ -36,7 +38,7 @@
           bar: {
             borderRadius: 5,
             borderSkipped: false,
-            hoverBackgroundColor:  data.map(row => row.day === currentDay ? 'hsla(186, 34%, 60%, 0.8)' : 'hsla(10, 79%, 65%, 0.8)'),
+            hoverBackgroundColor:  data.map(row => row.day === currentDay ? CYAN_COLOR_HOVER : SOFT_RED_COLOR_HOVER),
           }
         },
         scales: {

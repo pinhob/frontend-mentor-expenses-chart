@@ -8,7 +8,7 @@
 
 <style>
   div.wrapper {
-    background-color: hsl(10, 79%, 65%);
+    background-color: var(--soft-red);
     border-radius: 16px;
     padding: 16px 28px;
     color: white;
