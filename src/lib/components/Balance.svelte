@@ -1,9 +1,13 @@
+<script>
+  import Logo from '../../../public/logo.svg';
+</script>
+
 <div class="wrapper">
   <div class="balance-data">
     <h2>My balance</h2>
     <p>$921.48</p>
   </div>
-  <img src="public/logo.svg" alt="logo" />
+  <img src={Logo} alt="logo" />
 </div>
 
 <style>
